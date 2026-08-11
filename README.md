@@ -1,5 +1,3 @@
-# CiberseguridadDeLaInformacion
-
 # Ciberseguridad · 3.º Bachillerato Tecnológico
 
 **Escuela Técnica La Paz · DGETP (UTU) · ANEP**
