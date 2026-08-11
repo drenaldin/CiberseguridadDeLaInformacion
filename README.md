@@ -1,8 +1,4 @@
-# Ciberseguridad · 3.º Bachillerato Tecnológico
-
-**Escuela Técnica La Paz · DGETP (UTU) · ANEP**
-Orientación Tecnologías de la Información · Tramo 8 · Espacio de Autonomía Curricular
-
+# Ciberseguridad 
 ---
 
 Este repositorio contiene todo el material de estudio de la unidad curricular. Está abierto: podés leerlo desde el celular, desde una computadora del liceo o desde tu casa, sin necesidad de cuenta ni de instalar nada.
