@@ -73,15 +73,6 @@ Cualquier incumplimiento de este acuerdo implica:
 2. Comunicación a la Dirección del centro.
 3. Según la gravedad, aplicación del régimen disciplinario vigente y, si corresponde, denuncia ante las autoridades competentes.
 
----
-
-## 6. Compromiso
-
-> Al firmar este acuerdo declaro que leí y comprendí su contenido, que conozco las consecuencias legales del acceso no autorizado a sistemas informáticos, y que me comprometo a aplicar lo aprendido en este curso exclusivamente en los términos aquí establecidos.
-
-**Nombre:** ______________________________  **Cédula:** ______________
-
-**Firma:** ______________________________  **Fecha:** ____ / ____ / 2026
 
 ---
 
