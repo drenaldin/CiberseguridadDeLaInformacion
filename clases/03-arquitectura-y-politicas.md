@@ -8,6 +8,10 @@
 
 ---
 
+📥 **Presentación de la clase:** [Clase 3 · Arquitectura y políticas](../presentaciones/Clase3-Arquitectura-y-Politicas.pptx) — 29 diapositivas en `.pptx`. Se descarga con el botón **Download** que aparece arriba a la derecha al abrir el enlace. Sirve para repasar aunque no hayas tomado apuntes.
+
+---
+
 > [!TIP]
 > **Cómo usar este material.** Las clases 1 y 2 respondieron *qué* se protege. Esta responde *cómo se decide* la protección, y tiene dos mitades que parecen distintas y no lo son: los **principios de diseño** (lo que hace el técnico) y las **políticas** (lo que decide la organización). Un principio sin política es una buena idea que no se aplica; una política sin principios es un archivo PDF que nadie cumple.
 
@@ -288,6 +292,8 @@ Fijate qué tienen en común las de la derecha: **sujeto, acción, plazo y verif
 📝 **Actividad:** [Redactar una política de seguridad](../actividades/03-politica-de-seguridad.md) — en grupos, con auditoría cruzada entre equipos.
 
 ✅ **Autoevaluación:** [Poné a prueba lo que leíste](../autoevaluacion/03-arquitectura-y-politicas.md) — 10 preguntas con respuestas explicadas.
+
+📥 **Presentación:** [Clase 3 · Arquitectura y políticas](../presentaciones/Clase3-Arquitectura-y-Politicas.pptx) — la misma que se usó en el pizarrón, con las notas del docente en cada diapositiva.
 
 📖 **Consulta:** [Glosario](../recursos/glosario.md) · [Bibliografía](../recursos/bibliografia.md) · [Normativa uruguaya](../recursos/normativa-uruguay.md)
 
