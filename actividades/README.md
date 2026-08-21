@@ -6,6 +6,7 @@ Consignas de trabajo, cada una con su rúbrica de evaluación.
 |---|---|---|
 | 01 | [Análisis de un incidente real](01-analisis-de-incidente.md) | 2 |
 | 02 | [Clasificación CID y diseño de controles](02-clasificacion-cid.md) | 3 |
+| 03 | [Redactar una política de seguridad](03-politica-de-seguridad.md) | 4 |
 
 ---
 

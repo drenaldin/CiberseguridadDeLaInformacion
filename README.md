@@ -25,7 +25,7 @@ Este repositorio contiene todo el material de estudio de la unidad curricular. E
 |---|---|---|---|
 | 01 | Fundamentos de la ciberseguridad | 1.1 · 1.5 · 1.6 | [Leer](clases/01-fundamentos.md) |
 | 02 | Tríada CID en profundidad y análisis de casos | 1.1 | [Leer](clases/02-triada-cid.md) |
-| 03 | Principios de arquitectura de seguridad y políticas | 1.2 · 1.6 | *Próximamente* |
+| 03 | Principios de arquitectura de seguridad y políticas | 1.2 · 1.6 | [Leer](clases/03-arquitectura-y-politicas.md) |
 | 04 | Amenazas I: malware, ransomware y phishing | 1.5 | *Próximamente* |
 | 05 | Amenazas II: ingeniería social, DoS, APT | 1.5 | *Próximamente* |
 | 06 | Vulnerabilidades, superficie de ataque y contraseñas | 1.3 | *Próximamente* |
@@ -44,6 +44,7 @@ Este repositorio contiene todo el material de estudio de la unidad curricular. E
 |---|---|---|
 | 01 | [Análisis de un incidente real](actividades/01-analisis-de-incidente.md) | [10 preguntas](autoevaluacion/01-fundamentos.md) |
 | 02 | [Clasificación CID y diseño de controles](actividades/02-clasificacion-cid.md) | [10 preguntas](autoevaluacion/02-triada-cid.md) |
+| 03 | [Redactar una política de seguridad](actividades/03-politica-de-seguridad.md) | [10 preguntas](autoevaluacion/03-arquitectura-y-politicas.md) |
 
 ---
 

@@ -14,6 +14,8 @@ Ficha de consulta. Uruguay tiene una institucionalidad consolidada en la materia
 | 2008 | **Ley N.º 18.331** | Protección de datos personales y acción de habeas data. |
 | 2008 | **Ley N.º 18.362**, art. 73 | Creó el CERTuy. |
 | 2009 | **Decreto N.º 451/009** | Reglamentó el funcionamiento y la organización del CERTuy. |
+| 2009 | **Decreto N.º 452/009** | Obligó a los organismos de la Administración Central a **adoptar una Política de Seguridad de la Información**. |
+| 2016 | **Marco de Ciberseguridad** | Primera versión del marco de Agesic. La vigente es la **5.0**. |
 | 2024 | **Ley N.º 20.327** | Primera ley de ciberdelitos: los incorporó al Código Penal. |
 | 2025 | **Decreto N.º 66/025** | Hizo obligatorio el Marco de Ciberseguridad de Agesic. |
 
@@ -31,11 +33,38 @@ Ficha de consulta. Uruguay tiene una institucionalidad consolidada en la materia
 
 Es el equipo nacional al que se reportan los incidentes y con el que se coordina la respuesta. Además produce material de concientización ciudadana, como la campaña «Seguro te conectás».
 
+### Decreto N.º 452/009 (2009)
+
+Es la norma que convierte la política de seguridad en obligación. Dispuso que las unidades ejecutoras de la Administración Central **adopten una Política de Seguridad de la Información** con el objetivo de implantar un sistema de gestión de la seguridad.
+
+Conviene tenerlo presente: **la obligación existe desde hace más de quince años**. Que una norma esté escrita no significa que esté cumplida.
+
 ### Decreto N.º 66/025 (2025)
 
 Definió los cometidos de la Dirección de Seguridad de la Información de Agesic y **amplió el alcance obligatorio del Marco de Ciberseguridad**: ya no solo a organismos públicos, sino también a empresas privadas que prestan servicios críticos al Estado.
 
-Entre otras cosas, obliga a adoptar el Marco, a realizar auditorías periódicas y a reportar incidentes. Regula también las obligaciones de los CSIRT y SOC sectoriales.
+Obligaciones concretas que conviene recordar:
+
+| Obligación | Detalle |
+|---|---|
+| **Responsable de Seguridad de la Información** | Hay que designarlo y comunicarlo a Agesic. |
+| **Adoptar el Marco de Ciberseguridad** | Y alcanzar los niveles mínimos de madurez del perfil asignado. |
+| **Notificar incidentes al CERTuy** | Dentro de las **24 horas**. |
+| **Conservar registros de auditoría** | Por **doce meses**. |
+| **Auditorías** | Periódicas, con plazos para el resumen ejecutivo y el plan de acción. |
+
+Regula también las obligaciones de los CSIRT y SOC sectoriales.
+
+### El Marco de Ciberseguridad
+
+Es el documento donde están los requisitos concretos. Su versión vigente es la **5.0** y toma su estructura del marco internacional del NIST:
+
+- **Seis funciones:** Gobernar, Identificar, Proteger, Detectar, Responder y Recuperar. La política de seguridad vive en **Gobernar**.
+- **Cinco niveles de madurez**, del 0 («sin medidas») al 4 («mejora continua»).
+- **Tres perfiles** —Básico, Estándar y Avanzado—, según la criticidad de los servicios del organismo.
+
+> [!IMPORTANT]
+> Según información de Agesic difundida en 2026, apenas **10 de 244 organismos públicos** relevados declaraban cumplimiento total del decreto de ciberseguridad. Leé la lista de filtraciones de la clase 2 con ese número al lado.
 
 > [!TIP]
 > La consecuencia práctica: en Uruguay, la ciberseguridad dejó de ser una recomendación técnica para convertirse en una **exigencia legal**. Para quien piense trabajar en el sector, esto significa que hay demanda formal de perfiles con esta formación.

@@ -7,6 +7,7 @@ Preguntas para practicar por tu cuenta, con las respuestas explicadas y plegadas
 |---|---|
 | 01 | [Fundamentos de la ciberseguridad](01-fundamentos.md) |
 | 02 | [La tríada CID en profundidad](02-triada-cid.md) |
+| 03 | [Arquitectura de seguridad y políticas](03-arquitectura-y-politicas.md) |
 
 > [!TIP]
 > Respondé antes de desplegar la respuesta. El efecto de aprendizaje está en el intento, no en la lectura.

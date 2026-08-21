@@ -9,7 +9,11 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 ## A
 
+**Aceptabilidad psicológica** — Principio de diseño según el cual un control que las personas no pueden cumplir se termina esquivando, y por lo tanto no protege.
+
 **Activo** — Todo aquello que tiene valor para la organización y por lo tanto requiere protección: datos, equipos, software, personas, reputación.
+
+**Agesic** — Agencia de Gobierno Electrónico y Sociedad de la Información y del Conocimiento. Organismo rector de la ciberseguridad en Uruguay; publica el Marco de Ciberseguridad.
 
 **Amenaza** — Causa potencial de un incidente no deseado. Puede ser deliberada (un atacante), accidental (un error humano) o ambiental (una inundación).
 
@@ -23,6 +27,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 **CID** — Confidencialidad, Integridad y Disponibilidad: las tres propiedades que la seguridad de la información preserva. En inglés, *CIA triad*.
 
+**Confianza cero** (*zero trust*) — Arquitectura que no considera confiable a nadie por estar dentro de la red: verifica cada acceso de forma explícita, aplica mínimo privilegio y asume que el atacante ya entró.
+
 **Confidencialidad** — Propiedad que garantiza que la información solo sea accesible para quien está autorizado.
 
 **Control** — Medida que modifica el riesgo. Puede ser técnica, organizativa, física o de personal.
@@ -34,6 +40,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 **Defensa en profundidad** — Estrategia de superponer varias capas de control, de modo que el fallo de una no comprometa todo el sistema.
 
 **Día cero** (*zero-day*) — Vulnerabilidad para la que aún no existe corrección disponible.
+
+**Diseño abierto** — Principio según el cual la seguridad no puede depender de que el diseño sea secreto: lo único secreto debe ser la clave. Su opuesto es la *seguridad por oscuridad*.
 
 **Disponibilidad** — Propiedad que garantiza que la información y los servicios estén accesibles cuando se los necesita.
 
@@ -57,7 +65,15 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 ## M
 
+**Madurez** — Escala del 0 al 4 con la que el Marco de Ciberseguridad mide cuán consolidada está la seguridad de una organización: de «sin medidas» a «mejora continua».
+
 **Malware** — Software malicioso. Categoría general que incluye virus, gusanos, troyanos, spyware y ransomware.
+
+**Marco de Ciberseguridad** — Conjunto de requisitos de Agesic organizado en seis funciones —Gobernar, Identificar, Proteger, Detectar, Responder y Recuperar— con niveles de madurez y perfiles según la criticidad del organismo.
+
+**Mediación completa** — Principio según el cual cada acceso debe verificarse todas las veces, y no solo al iniciar sesión.
+
+**Mínimo mecanismo común** — Principio según el cual cuanto menos se comparta entre usuarios distintos, menos caminos hay para pasar de uno a otro.
 
 **Mínimo privilegio** — Principio según el cual cada usuario o proceso recibe solo los permisos estrictamente necesarios para su función.
 
@@ -65,9 +81,17 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 **No repudio** — Propiedad que impide que quien realizó una acción pueda negar después haberla realizado.
 
+**Norma** (o estándar) — Documento obligatorio y medible que baja una política a requisitos concretos. Su verbo característico es «debe».
+
 ## P
 
 **Phishing** — Engaño, generalmente por correo electrónico, para que la víctima entregue datos o credenciales o ejecute un archivo malicioso. Por voz se llama **vishing**; por SMS, **smishing**.
+
+**Política de seguridad** — Documento aprobado por la máxima autoridad que establece qué se protege y por qué. En Uruguay es obligatoria para los organismos de la Administración Central desde el Decreto N.º 452/009.
+
+**Predeterminados a prueba de fallos** (*fail-safe defaults*) — Principio según el cual, por omisión, hay que denegar: el acceso se concede explícitamente, no se recorta después.
+
+**Procedimiento** — Documento que describe paso a paso cómo se ejecuta una tarea. Lo escribe quien opera el sistema.
 
 ## R
 
@@ -76,6 +100,10 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 **Riesgo** — Combinación de la probabilidad de que una amenaza explote una vulnerabilidad y del impacto que eso produciría.
 
 ## S
+
+**Saltzer y Schroeder** — Autores del artículo de 1975 que enunció los ocho principios de diseño de la protección de la información, todavía vigentes.
+
+**Separación de privilegios** — Principio según el cual una acción crítica debe requerir dos condiciones independientes, no una sola credencial.
 
 **Superficie de ataque** — Conjunto de puntos por los que un atacante podría intentar entrar en un sistema.
 
