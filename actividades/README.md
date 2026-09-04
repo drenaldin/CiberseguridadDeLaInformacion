@@ -8,6 +8,7 @@ Consignas de trabajo, cada una con su rúbrica de evaluación.
 | 02 | [Clasificación CID y diseño de controles](02-clasificacion-cid.md) | 3 |
 | 03 | [Redactar una política de seguridad](03-politica-de-seguridad.md) | 4 |
 | 04 | [Disección de mensajes sospechosos](04-diseccion-de-phishing.md) | 5 |
+| 05 | [Tres amenazas, tres defensas](05-tres-amenazas.md) | 6 |
 
 ---
 

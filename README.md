@@ -27,7 +27,7 @@ Este repositorio contiene todo el material de estudio de la unidad curricular. E
 | 02 | Tríada CID en profundidad y análisis de casos | 1.1 | [Leer](clases/02-triada-cid.md) |
 | 03 | Principios de arquitectura de seguridad y políticas | 1.2 · 1.6 | [Leer](clases/03-arquitectura-y-politicas.md) |
 | 04 | Amenazas I: malware, ransomware y phishing | 1.5 | [Leer](clases/04-amenazas-malware-ransomware-phishing.md) |
-| 05 | Amenazas II: ingeniería social, DoS, APT | 1.5 | *Próximamente* |
+| 05 | Amenazas II: ingeniería social, DoS, APT | 1.5 | [Leer](clases/05-amenazas-ingenieria-dos-apt.md) |
 | 06 | Vulnerabilidades, superficie de ataque y contraseñas | 1.3 | *Próximamente* |
 | 07 | Tecnologías emergentes e inteligencia artificial | 1.4 | *Próximamente* |
 | 08 | Sistemas de autenticación | 2.6 | *Próximamente* |
@@ -46,6 +46,7 @@ Este repositorio contiene todo el material de estudio de la unidad curricular. E
 | 02 | [Clasificación CID y diseño de controles](actividades/02-clasificacion-cid.md) | [10 preguntas](autoevaluacion/02-triada-cid.md) |
 | 03 | [Redactar una política de seguridad](actividades/03-politica-de-seguridad.md) | [10 preguntas](autoevaluacion/03-arquitectura-y-politicas.md) |
 | 04 | [Disección de mensajes sospechosos](actividades/04-diseccion-de-phishing.md) | [10 preguntas](autoevaluacion/04-amenazas-malware-ransomware-phishing.md) |
+| 05 | [Tres amenazas, tres defensas](actividades/05-tres-amenazas.md) | [10 preguntas](autoevaluacion/05-amenazas-ingenieria-dos-apt.md) |
 
 ---
 

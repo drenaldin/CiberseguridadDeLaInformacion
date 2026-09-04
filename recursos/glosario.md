@@ -19,17 +19,23 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 **Amenaza** — Causa potencial de un incidente no deseado. Puede ser deliberada (un atacante), accidental (un error humano) o ambiental (una inundación).
 
+**APT** (*Advanced Persistent Threat*) — Amenaza persistente avanzada: atacante con muchos recursos que se queda mucho tiempo, sin hacerse notar, con un objetivo concreto (espionaje o sabotaje).
+
 **APT** (*Advanced Persistent Threat*) — Intrusión prolongada y sigilosa, normalmente con respaldo de recursos importantes, orientada a permanecer sin ser detectada durante meses o años.
 
 **Autenticidad** — Propiedad que garantiza que quien dice ser el emisor de una información efectivamente lo es.
 
 ## B
 
+**Baiting** — Técnica de ingeniería social: dejar un cebo tentador (un pendrive «olvidado», una descarga) para que la víctima lo active.
+
 **BEC** (*Business Email Compromise*) — Fraude que suplanta a una autoridad de la organización por correo para pedir una transferencia o una compra urgente. Se lo llama también «fraude del jefe».
 
 **Botnet** — Red de equipos infectados y controlados a distancia, usada para atacar a terceros.
 
 ## C
+
+**Cadena de suministro (ataque a la)** — Atacar a una organización comprometiendo a un proveedor en quien confía, por ejemplo insertando código en una actualización oficial.
 
 **CERT / CSIRT** — Equipo de respuesta a incidentes de seguridad informática. El nacional de Uruguay es el **CERTuy**, que funciona en Agesic.
 
@@ -45,6 +51,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 ## D
 
+**DDoS** (*Distributed Denial of Service*) — Denegación de servicio distribuida: el mismo ataque desde miles de equipos a la vez, normalmente una botnet.
+
 **Defensa en profundidad** — Estrategia de superponer varias capas de control, de modo que el fallo de una no comprometa todo el sistema.
 
 **Día cero** (*zero-day*) — Vulnerabilidad para la que aún no existe corrección disponible.
@@ -54,6 +62,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 **Disponibilidad** — Propiedad que garantiza que la información y los servicios estén accesibles cuando se los necesita.
 
 **Doble extorsión** — Táctica del ransomware actual: primero se exfiltran los datos y después se cifran, para amenazar con publicarlos además de bloquearlos.
+
+**DoS** (*Denial of Service*) — Ataque de denegación de servicio desde un solo origen: satura un servicio hasta dejarlo inaccesible.
 
 **DoS / DDoS** — Ataque de denegación de servicio. Satura un servicio hasta dejarlo inaccesible. La versión distribuida (DDoS) lo hace desde muchos equipos a la vez.
 
@@ -74,6 +84,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 ## I
 
 **Impacto** — Consecuencia adversa concreta si el incidente ocurre.
+
+**Ingeniería social** — Conjunto de técnicas para manipular a una persona y lograr que entregue información, dé un acceso o haga algo que no debería.
 
 **Ingeniería social** — Manipulación de personas para obtener información o accesos. Incluye phishing, vishing y smishing.
 
@@ -111,7 +123,13 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 **Predeterminados a prueba de fallos** (*fail-safe defaults*) — Principio según el cual, por omisión, hay que denegar: el acceso se concede explícitamente, no se recorta después.
 
+**Pretexting** — Técnica de ingeniería social: inventar un pretexto creíble para pedir información o un acceso.
+
 **Procedimiento** — Documento que describe paso a paso cómo se ejecuta una tarea. Lo escribe quien opera el sistema.
+
+## Q
+
+**Quid pro quo** — Técnica de ingeniería social: ofrecer algo a cambio de un dato o un acceso.
 
 ## R
 
@@ -127,6 +145,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 **Separación de privilegios** — Principio según el cual una acción crítica debe requerir dos condiciones independientes, no una sola credencial.
 
+**Shoulder surfing** — Espiar por encima del hombro una contraseña, un PIN o una pantalla.
+
 **Smishing** — Phishing por SMS o mensajería.
 
 **Spear phishing** — Phishing dirigido a una persona concreta, usando su nombre, su cargo y su contexto.
@@ -136,6 +156,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 **Superficie de ataque** — Conjunto de puntos por los que un atacante podría intentar entrar en un sistema.
 
 ## T
+
+**Tailgating** — Colarse a un lugar físico restringido detrás de una persona autorizada.
 
 **Trazabilidad** (o rendición de cuentas) — Propiedad que garantiza que toda acción quede registrada y pueda atribuirse a un responsable.
 
