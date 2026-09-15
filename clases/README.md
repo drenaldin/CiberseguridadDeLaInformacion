@@ -9,6 +9,7 @@ Material de estudio de cada clase. Es lo que hay que leer.
 | 03 | [Principios de arquitectura de seguridad y políticas](03-arquitectura-y-politicas.md) | 1.2 · 1.6 |
 | 04 | [Amenazas I: malware, ransomware y phishing](04-amenazas-malware-ransomware-phishing.md) | 1.5 |
 | 05 | [Amenazas II: ingeniería social, DoS/DDoS y APT](05-amenazas-ingenieria-dos-apt.md) | 1.5 |
+| 06 | [Vulnerabilidades y superficie de ataque](06-vulnerabilidades-y-superficie-de-ataque.md) | 1.3 |
 
 El resto se va publicando a medida que avanza el curso.
 
@@ -18,7 +19,8 @@ El resto se va publicando a medida que avanza el curso.
 - [Clase 3 · Arquitectura y políticas](../presentaciones/Clase3-Arquitectura-y-Politicas.pptx)
 - [Clase 4 · Amenazas I](../presentaciones/Clase4-Amenazas-I.pptx)
 - [Clase 5 · Amenazas II](../presentaciones/Clase5-Amenazas-II.pptx)
+- [Clase 6 · Vulnerabilidades y superficie de ataque](../presentaciones/Clase6-Vulnerabilidades-y-Superficie-de-Ataque.pptx)
 
 ---
 
-[⬅ Índice del curso](../README.md)
+[⬅ Volver al índice del curso](../README.md)
