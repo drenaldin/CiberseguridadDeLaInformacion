@@ -15,6 +15,7 @@ Este repositorio contiene todo el material de estudio de la unidad curricular. E
 | [`clases/`](clases/) | El material de estudio de cada clase. Es lo que hay que leer. |
 | [`actividades/`](actividades/) | Las consignas de trabajo, con sus rúbricas de evaluación. |
 | [`autoevaluacion/`](autoevaluacion/) | Preguntas para practicar por tu cuenta, con las respuestas explicadas. |
+| [`evaluaciones/`](evaluaciones/) | Las pruebas parciales del curso, una por grupo. |
 | [`recursos/`](recursos/) | Glosario, bibliografía y normativa uruguaya, para consultar cuando haga falta. |
 
 ---
