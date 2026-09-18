@@ -10,7 +10,7 @@ Preguntas para practicar por tu cuenta, con las respuestas explicadas y plegadas
 | 03 | [Arquitectura de seguridad y políticas](03-arquitectura-y-politicas.md) |
 | 04 | [Amenazas I: malware, ransomware y phishing](04-amenazas-malware-ransomware-phishing.md) |
 | 05 | [Amenazas II: ingeniería social, DoS/DDoS y APT](05-amenazas-ingenieria-dos-apt.md) |
-| 06 | [Vulnerabilidades y superficie de ataque](06-vulnerabilidades-y-superficie-de-ataque.md) |
+| 06 | [Vulnerabilidades y cómo se cierran en el código](06-vulnerabilidades-y-superficie-de-ataque.md) |
 
 > [!TIP]
 > Respondé antes de desplegar la respuesta. El efecto de aprendizaje está en el intento, no en la lectura.

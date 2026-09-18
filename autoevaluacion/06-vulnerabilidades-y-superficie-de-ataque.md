@@ -1,6 +1,6 @@
 # Autoevaluación · Clase 6
 
-**Vulnerabilidades y superficie de ataque**
+**Vulnerabilidades y cómo se cierran en el código**
 
 ---
 
@@ -11,144 +11,131 @@ Respondé mentalmente o en papel *antes* de desplegar la respuesta. El efecto de
 > [!TIP]
 > En el celular, tocá el triángulo ▸ para desplegar cada respuesta.
 
-📖 Si algo no te sale, volvé a [Clase 6 · Vulnerabilidades y superficie de ataque](../clases/06-vulnerabilidades-y-superficie-de-ataque.md).
+📖 Si algo no te sale, volvé a [Clase 6 · Vulnerabilidades y cómo se cierran](../clases/06-vulnerabilidades-y-superficie-de-ataque.md).
 
 ---
 
-### 1. ¿Cuál es la diferencia entre una vulnerabilidad y una amenaza?
+### 1. ¿Qué diferencia hay entre una vulnerabilidad y un patrón?
 
 <details>
 <summary>Ver respuesta</summary>
 
-La **vulnerabilidad** es una debilidad **del sistema**: está ahí aunque nadie la mire. La **amenaza** es quien o qué podría aprovecharla.
+La **vulnerabilidad** es la debilidad del sistema —cómo está escrito el código que deja entrar el ataque—. El **patrón** es la forma conocida y probada de cerrar esa debilidad.
 
-La cerradura floja es la vulnerabilidad; el que anda robando en el barrio es la amenaza. Y hay dos más: el **exploit** es la ganzúa que abre justo esa cerradura, y el **riesgo** depende de qué guardás adentro.
-
-De las cuatro, la vulnerabilidad es la única sobre la que podés actuar directamente.
+Ejemplo: la vulnerabilidad es que el login pega la cédula al texto del SQL; el patrón que la cierra es la consulta parametrizada. La vulnerabilidad es lo que hay que arreglar; el patrón es cómo se arregla.
 </details>
 
 ---
 
-### 2. ¿Qué información trae un identificador como `CVE-2021-44228`?
+### 2. En la inyección SQL, ¿cuál es exactamente el error del programa?
 
 <details>
 <summary>Ver respuesta</summary>
 
-Solo dos cosas: **el año** en que se reservó el identificador (2021) y un **número correlativo** sin significado propio (44228).
+Que **pega el dato del usuario directo al texto de la consulta**. Así, un texto que parece una cédula puede contener órdenes para la base, y el motor las ejecuta.
 
-No dice qué producto afecta, ni qué tan grave es, ni cómo se explota. Para eso hay que ir a la base pública —la **NVD**— donde está la descripción, el puntaje y la lista de versiones afectadas.
-
-Lo importante del CVE es lo que implica: si la vulnerabilidad tiene número público, **la conocen los dos bandos**.
+El dato del usuario se transformó en parte de la orden. Por eso el patrón es la **consulta parametrizada**: el dato viaja por un parámetro (`?`) y el motor lo trata siempre como dato, nunca como parte del SQL.
 </details>
 
 ---
 
-### 3. ¿En qué se diferencian un CVE y un CWE?
+### 3. Un compañero dice: «para arreglar el XSS, prohíbo que se escriba `<` en el buscador». ¿Alcanza?
 
 <details>
 <summary>Ver respuesta</summary>
 
-El **CVE es el caso**: esta falla, en este producto, en estas versiones. El **CWE es la categoría**: el tipo de error.
+**No, y además está mirando el lugar equivocado.** Filtrar caracteres en la entrada es frágil (hay muchas formas de escribir lo mismo) y bloquea búsquedas legítimas (`nota < 6`).
 
-Miles de CVE distintos pueden ser todos **CWE-89** (inyección SQL), porque miles de programas cometieron el mismo error.
-
-Sirven para cosas distintas: el CVE te dice **si te afecta**; el CWE te dice **qué clase de error fue** y si lo vas a volver a cometer.
+El patrón del XSS es **codificar la salida**: escapar el dato con `htmlspecialchars` **cuando se lo muestra**, para que `<script>` aparezca como texto y no se ejecute. Se arregla donde se muestra, no donde se recibe.
 </details>
 
 ---
 
-### 4. Una vulnerabilidad tiene CVSS 9,8 y otra 6,5. ¿Cuál se arregla primero?
+### 4. ¿Por qué el IDOR es peligroso incluso en una aplicación que pide login?
 
 <details>
 <summary>Ver respuesta</summary>
 
-**Depende. No se puede decidir solo con el puntaje.**
+Porque **estar logueado no es lo mismo que tener permiso**. El IDOR aparece cuando el programa verifica que haya una sesión, pero no que ese usuario pueda ver *ese* objeto.
 
-El CVSS mide la gravedad de la falla **en abstracto**: no sabe si esa máquina está conectada a internet, qué guarda ni si ya hay un exploit circulando.
-
-Si la de 9,8 está en un servidor interno sin salida a internet y sin exploit conocido, y la de 6,5 está en el sitio web público con un exploit publicado hace tres semanas, **se arregla primero la de 6,5**.
-
-El puntaje te lo dan hecho; la prioridad la ponés vos, con el contexto.
+Camila está logueada; cambia `id=1` por `id=3` en la URL y ve algo ajeno. El patrón es el **control de acceso por objeto**: comprobar, en cada pedido, que el objeto le pertenezca o que su rol lo autorice. Autenticar (quién sos) y autorizar (qué podés ver) son dos cosas distintas.
 </details>
 
 ---
 
-### 5. ¿Qué significa que una vulnerabilidad sea de «día cero»?
+### 5. ¿Qué permite el salto de directorio, y con qué patrón se cierra?
 
 <details>
 <summary>Ver respuesta</summary>
 
-Que quien defiende tuvo **cero días** para prepararse: el atacante la conoce y el fabricante todavía no. **No hay parche** porque nadie lo escribió.
+Permite **leer archivos que no eran para descargar**, usando `../` para salir de la carpeta prevista. En el portal, `descargar.php?archivo=../conexion.php` baja el archivo con la contraseña de la base.
 
-Pero es la excepción, no la regla. La enorme mayoría de los ataques reales usa **fallas viejas, publicadas y con parche disponible**, en sistemas que nadie actualizó.
-
-Un día cero es caro y escaso. Un servidor sin actualizar hace dos años es gratis.
+Se cierra con una **lista blanca**: en vez de confiar en el nombre que llega, solo se sirven los archivos de una lista fija. Lo que no está en la lista, no se entrega.
 </details>
 
 ---
 
-### 6. ¿Cuáles son los tres planos de la superficie de ataque, y cuál se olvida más?
+### 6. ¿Por qué lista blanca le gana a lista negra?
 
 <details>
 <summary>Ver respuesta</summary>
 
-**Red** (equipos, puertos abiertos, servicios, wifi), **software** (sistemas operativos, aplicaciones y sus versiones) y **personas** (cuentas, permisos, accesos de terceros).
+Porque la **lista negra** (prohibir lo malo) siempre se olvida de un caso: hay muchas formas de escribir `../`, y con que se escape una, el ataque pasa.
 
-El que más se olvida es el de **personas**. Una cuenta activa de alguien que ya no está en la organización es una puerta abierta, y ningún escáner de red la va a marcar en rojo.
+La **lista blanca** (permitir solo lo bueno) no tiene ese problema: todo lo que no está explícitamente permitido queda afuera por omisión. Es el principio de *predeterminados a prueba de fallos*: por defecto, denegar.
 </details>
 
 ---
 
-### 7. ¿Qué diferencia hay entre un puerto cerrado, uno abierto, y uno abierto con una versión vieja?
+### 7. La contraseña de Camila está guardada como `81dc9bdb...` (un MD5). ¿Cuál es el problema?
 
 <details>
 <summary>Ver respuesta</summary>
 
-- **Cerrado:** no hay nadie del otro lado. No es un punto de entrada.
-- **Abierto:** hay un **servicio escuchando**. Es una puerta con alguien atendiendo.
-- **Abierto con versión vieja:** quien atiende tiene una **falla conocida y publicada**, con su CVE y su parche esperando.
+Que **MD5 es rápido y no tiene sal**. Al ser rápido, un atacante prueba millones de candidatos por segundo; al no tener sal, esa misma cadena ya está en tablas precalculadas que circulan, y la contraseña aparece al instante.
 
-Por eso el orden del análisis es inventario → servicios → **versiones** → vulnerabilidades. Sin la versión exacta no hay diagnóstico.
+El patrón es un **hash lento con sal**: `password_hash()` (bcrypt), lento a propósito y con una sal distinta por contraseña. Se verifica con `password_verify()`. Nunca MD5.
 </details>
 
 ---
 
-### 8. ¿Por qué un sitio web serio no puede decirte cuál era tu contraseña?
+### 8. ¿Qué tienen en común las cinco fallas de la clase?
 
 <details>
 <summary>Ver respuesta</summary>
 
-Porque **no la guarda**. Guarda su **hash**: el resultado de pasarla por una función de un solo sentido, fácil de calcular para adelante e inviable de revertir.
+Que el programa **confía en lo que llega de afuera**. Espera una cédula y llega SQL; espera un nombre y llega un `<script>`; espera que pidas lo tuyo y pedís lo ajeno; espera un archivo del liceo y llega `../conexion.php`.
 
-Cuando iniciás sesión, el sitio calcula el hash de lo que escribiste y lo compara con el que tiene guardado. Nunca necesita la contraseña original.
-
-Corolario práctico: **si un sitio te manda tu contraseña por correo, la está guardando mal.**
+Los cinco patrones son la misma regla aplicada en cinco lugares: **tratar el dato como dato** —nunca como orden, ni como código, ni como permiso automático— y verificar siempre quién manda qué.
 </details>
 
 ---
 
-### 9. `S3gur!d@` o `caballoverde`: ¿cuál aguanta más un ataque, y por qué?
+### 9. En el login seguro, ¿por qué la cédula del usuario ya no puede cambiar la consulta?
 
 <details>
 <summary>Ver respuesta</summary>
 
-**`caballoverde`**, y por dos motivos distintos.
+Porque viaja como **parámetro**, no pegada al texto del SQL:
 
-Por la cuenta: 12 minúsculas dan 26¹² ≈ 9,5 × 10¹⁶ combinaciones, contra 95⁸ ≈ 6,6 × 10¹⁵ de la otra. Catorce veces más. **Cada carácter que agregás multiplica; cada símbolo raro apenas suma.**
+```php
+$stmt = $db->prepare("SELECT * FROM usuarios WHERE cedula = ?");
+$stmt->execute([$cedula]);
+```
 
-Y por algo peor: `S3gur!d@` ni siquiera llega a ese número. Es la palabra «seguridad» con las cuatro sustituciones más previsibles que existen (`e`→`3`, `i`→`!`, `a`→`@`), y los diccionarios de ataque aplican esas reglas solos. Cae en segundos.
+Mande lo que mande el usuario, ese texto entra entero en el lugar del `?` y se busca *esa cédula literal*. `' OR rol='adscripta' -- ` se busca como si fuera una cédula rarísima: no existe, y no entra nadie.
 </details>
 
 ---
 
-### 10. El estándar vigente dice que **no** hay que obligar a cambiar la contraseña cada 90 días. ¿Por qué?
+### 10. ¿Por qué escribir un buen patrón es mejor que «programar con más cuidado»?
 
 <details>
 <summary>Ver respuesta</summary>
 
-Porque en la práctica **empeoraba** las contraseñas. La gente no inventa una nueva cada vez: pasa de `Marzo2026!` a `Junio2026!`. El cambio obligatorio producía contraseñas predecibles, y usuarios que las anotaban en un papel.
+Porque el «cuidado» depende de acordarse cada vez, y con apuro se falla. Un **patrón** es una solución probada que se aplica siempre igual: la consulta parametrizada cierra la inyección **haya o no** un atacante, se acuerde o no el que programa.
 
-La regla del NIST (SP 800-63B-4, julio de 2025) es que se fuerza el cambio **solo si hay indicio de que la contraseña se filtró**. Y en la misma línea: mínimo 15 caracteres si es el único factor, no exigir mezclas de mayúsculas y símbolos, y **sí** comparar contra listas de contraseñas ya filtradas.
+Los patrones sacan la seguridad de la buena memoria y la ponen en la forma de escribir el código. Por eso se dice «acá va una consulta parametrizada» como una regla, no como una recomendación.
 </details>
 
 ---
@@ -157,9 +144,9 @@ La regla del NIST (SP 800-63B-4, julio de 2025) es que se fuerza el cambio **sol
 
 | Respondiste bien | Qué significa |
 |---|---|
-| 8 a 10 | Estás pronto para el triage de la actividad. Sabés leer una ficha de vulnerabilidad y ponerla en contexto. |
-| 5 a 7 | Repasá la sección 1 (los cuatro términos) y la 5 (el puntaje no es el riesgo). Son las dos que sostienen todo lo demás. |
-| Menos de 5 | Volvé a leer el material. Empezá por la tabla de la sección 1: si no se separan vulnerabilidad, amenaza, exploit y riesgo, el resto no se ordena. |
+| 8 a 10 | Estás pronto para el laboratorio. Reconocés la falla y sabés qué patrón le corresponde. |
+| 5 a 7 | Repasá la sección 5 (el error de fondo) y la tabla de la sección 11. Son las dos que ordenan todo lo demás. |
+| Menos de 5 | Volvé a leer el material. Empezá por la sección 2: si no se separan amenaza, vulnerabilidad y patrón, el resto no se acomoda. |
 
 ---
 

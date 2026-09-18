@@ -35,6 +35,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 **Cadena de suministro (ataque a la)** — Atacar a una organización comprometiendo a un proveedor en quien confía, por ejemplo insertando código en una actualización oficial.
 
+**Codificación de salida** (*output encoding*) — Patrón contra el XSS: antes de mostrar un dato en una página, se escapan sus caracteres especiales (`<`, `>`, `"`) con `htmlspecialchars` o equivalente, para que el texto de un usuario nunca se interprete como código HTML. Se aplica en la salida, donde se muestra, no en la entrada.
+
 **CERT / CSIRT** — Equipo de respuesta a incidentes de seguridad informática. El nacional de Uruguay es el **CERTuy**, que funciona en Agesic.
 
 **CID** — Confidencialidad, Integridad y Disponibilidad: las tres propiedades que la seguridad de la información preserva. En inglés, *CIA triad*.
@@ -45,7 +47,11 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 **Confidencialidad** — Propiedad que garantiza que la información solo sea accesible para quien está autorizado.
 
+**Consulta parametrizada** (*prepared statement*) — Patrón contra la inyección SQL: el dato del usuario viaja como parámetro (`prepare` + `?`), separado del texto de la consulta, y el motor de la base lo trata siempre como dato, nunca como parte de la orden. El dato nunca se concatena al SQL.
+
 **Control** — Medida que modifica el riesgo. Puede ser técnica, organizativa, física o de personal.
+
+**Control de acceso por objeto** — Patrón contra el IDOR: antes de entregar un recurso, se verifica que quien lo pide tenga permiso sobre *ese* recurso concreto, no solo que tenga una sesión abierta. Autenticar (quién sos) no es autorizar (qué podés ver).
 
 **Credenciales por defecto** — Usuario y contraseña con los que un equipo o programa viene de fábrica (`admin`/`admin` y similares). Están publicadas en los manuales: dejarlas puestas es una de las vulnerabilidades más explotadas y de las más fáciles de eliminar.
 
@@ -93,15 +99,23 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 ## I
 
+**IDOR** (*Insecure Direct Object Reference*, referencia insegura a objeto, **CWE-639**) — Falla por la que, cambiando un identificador en la URL (`?id=3`), se accede a datos de otro que no correspondían. Ocurre incluso en aplicaciones con login: el programa verifica que haya sesión pero no que ese usuario pueda ver ese objeto. Se cierra con **control de acceso por objeto**.
+
 **Impacto** — Consecuencia adversa concreta si el incidente ocurre.
 
 **Ingeniería social** — Conjunto de técnicas para manipular a una persona y lograr que entregue información, dé un acceso o haga algo que no debería. Incluye phishing, vishing, smishing, pretexting, baiting, tailgating, quid pro quo y shoulder surfing.
 
 **Integridad** — Propiedad que garantiza que la información sea exacta y completa, y que no se modifique sin autorización.
 
+**Inyección SQL** (**CWE-89**) — Falla por la que un dato del usuario, concatenado al texto de una consulta, termina siendo ejecutado como orden por la base de datos. Permite, por ejemplo, entrar sin contraseña. Se cierra con **consultas parametrizadas**.
+
 ## K
 
 **Keylogger** — Spyware que registra todo lo que se teclea, incluidas las contraseñas en el momento en que se escriben.
+
+## L
+
+**Lista blanca** (*allowlist*) — Patrón que consiste en permitir solo lo que está en una lista fija y rechazar todo lo demás por omisión. Le gana a la **lista negra** (prohibir lo malo), que siempre se olvida de un caso. Es la forma de cerrar el salto de directorio: solo se sirven los archivos de una lista.
 
 ## M
 
@@ -128,6 +142,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 ## P
 
 **Parche** — Corrección que el fabricante publica para eliminar una vulnerabilidad. Que exista no alcanza: el riesgo baja recién cuando alguien lo instala.
+
+**Patrón (de solución o de diseño)** — Solución probada y repetible a un problema de seguridad que se repite. No es un truco de una vez: es la forma en que hoy se resuelve *siempre* ese problema (por ejemplo, la consulta parametrizada para la inyección SQL). Desviarse del patrón vuelve a abrir la falla.
 
 **Phishing** — Engaño, generalmente por correo electrónico, para que la víctima entregue datos o credenciales o ejecute un archivo malicioso. Por voz se llama **vishing**; por SMS, **smishing**.
 
@@ -157,7 +173,11 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 **Sal** (*salt*) — Valor al azar que se agrega a cada contraseña antes de calcular su hash. Hace que dos usuarios con la misma contraseña tengan hashes distintos, e inutiliza las tablas de hashes precalculadas.
 
+**Salto de directorio** (*path traversal*, **CWE-22**) — Falla por la que, usando `../` en el nombre de un archivo pedido, se sale de la carpeta prevista y se leen archivos que no correspondían (código, configuración, archivos del sistema). Se cierra con una **lista blanca** de archivos permitidos.
+
 **Saltzer y Schroeder** — Autores del artículo de 1975 que enunció los ocho principios de diseño de la protección de la información, todavía vigentes.
+
+**SANS/CWE Top 25** — Lista de las 25 debilidades de software más peligrosas y frecuentes, elaborada a partir de datos reales de vulnerabilidades. Inyección SQL, XSS, salto de directorio, IDOR y hash débil están entre ellas.
 
 **Separación de privilegios** — Principio según el cual una acción crítica debe requerir dos condiciones independientes, no una sola credencial.
 
@@ -190,6 +210,10 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 **Vishing** — Phishing por llamada de voz.
 
 **Vulnerabilidad** — Debilidad de un activo o de un control que puede ser explotada por una amenaza. Es la única de las cuatro piezas del riesgo —vulnerabilidad, amenaza, exploit e impacto— sobre la que se puede actuar directamente.
+
+## X
+
+**XSS** (*Cross-Site Scripting*, scripting entre sitios, **CWE-79**) — Falla por la que un texto del usuario, mostrado sin escapar, se ejecuta como código en el navegador de otra persona (por ejemplo para robarle la sesión). Se cierra con **codificación de salida**: escapar el dato al mostrarlo.
 
 ---
 

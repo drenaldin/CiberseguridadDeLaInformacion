@@ -29,7 +29,8 @@ Este repositorio contiene todo el material de estudio de la unidad curricular. E
 | 03 | Principios de arquitectura de seguridad y políticas | 1.2 · 1.6 | [Leer](clases/03-arquitectura-y-politicas.md) |
 | 04 | Amenazas I: malware, ransomware y phishing | 1.5 | [Leer](clases/04-amenazas-malware-ransomware-phishing.md) |
 | 05 | Amenazas II: ingeniería social, DoS, APT | 1.5 | [Leer](clases/05-amenazas-ingenieria-dos-apt.md) |
-| 06 | Vulnerabilidades y superficie de ataque | 1.3 | [Leer](clases/06-vulnerabilidades-y-superficie-de-ataque.md) |
+| 06 | Vulnerabilidades y cómo se cierran en el código | 1.3 | [Leer](clases/06-vulnerabilidades-y-superficie-de-ataque.md) |
+| 06B | Inyección SQL en tu e-commerce *(profundización)* | 1.3 | [Leer](clases/06B-inyeccion-sql.md) |
 | 07 | Tecnologías emergentes e inteligencia artificial | 1.4 | *Próximamente* |
 | 08 | Sistemas de autenticación | 2.6 | *Próximamente* |
 | 09 | Criptografía | 2.5 | *Próximamente* |
@@ -48,7 +49,7 @@ Este repositorio contiene todo el material de estudio de la unidad curricular. E
 | 03 | [Redactar una política de seguridad](actividades/03-politica-de-seguridad.md) | [10 preguntas](autoevaluacion/03-arquitectura-y-politicas.md) |
 | 04 | [Disección de mensajes sospechosos](actividades/04-diseccion-de-phishing.md) | [10 preguntas](autoevaluacion/04-amenazas-malware-ransomware-phishing.md) |
 | 05 | [Tres amenazas, tres defensas](actividades/05-tres-amenazas.md) | [10 preguntas](autoevaluacion/05-amenazas-ingenieria-dos-apt.md) |
-| 06 | [Triage de vulnerabilidades](actividades/06-triage-de-vulnerabilidades.md) | [10 preguntas](autoevaluacion/06-vulnerabilidades-y-superficie-de-ataque.md) |
+| 06 | [Romperla y arreglarla](actividades/06-romper-y-arreglar.md) | [10 preguntas](autoevaluacion/06-vulnerabilidades-y-superficie-de-ataque.md) |
 
 ---
 

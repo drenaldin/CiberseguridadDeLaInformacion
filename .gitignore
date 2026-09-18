@@ -1,0 +1,9 @@
+# Material de trabajo y docente: NO va al repositorio público.
+# (Claves de corrección, evaluaciones con respuestas, apps vulnerables, temporales.)
+Claude outputs/
+Claude Outputs/
+
+# Archivos temporales de Office y del sistema
+~$*
+.DS_Store
+Thumbs.db
