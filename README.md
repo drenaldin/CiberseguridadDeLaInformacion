@@ -104,4 +104,4 @@ Las normas ISO/IEC, los libros y los informes citados pertenecen a sus respectiv
 
 ---
 
-*Docente: Diego Renaldín Medina · Curso 2026*
+*Docente: Diego Renaldín Medina · Curso Ciberseguridad*
