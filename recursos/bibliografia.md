@@ -95,4 +95,14 @@ Se publican todos los años y son la mejor fuente de datos reales sobre lo que e
 
 ---
 
+## Tecnologías emergentes e inteligencia artificial · Clase 7
+
+- **INTEF.** (2026). [*Guía sobre el uso de la inteligencia artificial en el ámbito educativo*, versión 2.0](https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/). Orientaciones y situaciones de aprendizaje para educación no universitaria.
+- **INCIBE.** [*Deepfakes*](https://www.incibe.es/aprendeciberseguridad/deepfakes) y [*Dispositivos IoT*](https://www.incibe.es/ciudadania/tematicas/dispositivos-iot). Recursos introductorios.
+- **OWASP.** (2025). [*LLM01: Prompt Injection*](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) y [*LLM07: System Prompt Leakage*](https://genai.owasp.org/llmrisk/llm072025-system-prompt-leakage/). Referencias técnicas para las explicaciones del asistente y sus permisos.
+- **NIST.** [*AI Risk Management Framework* y perfil de IA generativa](https://www.nist.gov/itl/ai-risk-management-framework). Gestión de riesgos.
+- **Agesic.** [*Inteligencia Artificial y Datos*](https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/inteligencia-artificial-datos). Portal uruguayo de referencia.
+
+---
+
 [⬅ Índice del curso](../README.md)

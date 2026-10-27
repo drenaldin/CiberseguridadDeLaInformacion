@@ -11,6 +11,7 @@ Material de estudio de cada clase. Es lo que hay que leer.
 | 05 | [Amenazas II: ingeniería social, DoS/DDoS y APT](05-amenazas-ingenieria-dos-apt.md) | 1.5 |
 | 06 | [Vulnerabilidades y cómo se cierran en el código](06-vulnerabilidades-y-superficie-de-ataque.md) | 1.3 |
 | 06B | [Inyección SQL en tu e-commerce (profundización)](06B-inyeccion-sql.md) | 1.3 |
+| 07 | [Tecnologías emergentes e inteligencia artificial](07-tecnologias-emergentes-e-inteligencia-artificial.md) | 1.4 |
 
 El resto se va publicando a medida que avanza el curso.
 
@@ -22,6 +23,7 @@ El resto se va publicando a medida que avanza el curso.
 - [Clase 5 · Amenazas II](../presentaciones/Clase5-Amenazas-II.pptx)
 - [Clase 6 · Vulnerabilidades y cómo se cierran](../presentaciones/Clase6-Vulnerabilidades-y-Superficie-de-Ataque.pptx)
 - [Clase 6B · Inyección SQL](../presentaciones/Clase6B-Inyeccion-SQL.pptx)
+- [Clase 7 · Tecnologías emergentes e inteligencia artificial](../presentaciones/Clase7-Tecnologias-Emergentes-e-Inteligencia-Artificial.pptx)
 
 ---
 

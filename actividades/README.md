@@ -10,6 +10,7 @@ Consignas de trabajo, cada una con su rúbrica de evaluación.
 | 04 | [Disección de mensajes sospechosos](04-diseccion-de-phishing.md) | 5 |
 | 05 | [Tres amenazas, tres defensas](05-tres-amenazas.md) | 6 |
 | 06 | [Romperla y arreglarla](06-romper-y-arreglar.md) | 6 |
+| 07 | [IA y seguridad: ¿qué harían ustedes?](07-ia-y-seguridad.md) · Grupal, 30 min, Google Forms | 7 |
 
 ---
 

@@ -11,6 +11,7 @@ Preguntas para practicar por tu cuenta, con las respuestas explicadas y plegadas
 | 04 | [Amenazas I: malware, ransomware y phishing](04-amenazas-malware-ransomware-phishing.md) |
 | 05 | [Amenazas II: ingeniería social, DoS/DDoS y APT](05-amenazas-ingenieria-dos-apt.md) |
 | 06 | [Vulnerabilidades y cómo se cierran en el código](06-vulnerabilidades-y-superficie-de-ataque.md) |
+| 07 | [Tecnologías emergentes e inteligencia artificial](07-tecnologias-emergentes-e-inteligencia-artificial.md) |
 
 > [!TIP]
 > Respondé antes de desplegar la respuesta. El efecto de aprendizaje está en el intento, no en la lectura.

@@ -31,7 +31,7 @@ Este repositorio contiene todo el material de estudio de la unidad curricular. E
 | 05 | Amenazas II: ingeniería social, DoS, APT | 1.5 | [Leer](clases/05-amenazas-ingenieria-dos-apt.md) |
 | 06 | Vulnerabilidades y cómo se cierran en el código | 1.3 | [Leer](clases/06-vulnerabilidades-y-superficie-de-ataque.md) |
 | 06B | Inyección SQL en tu e-commerce *(profundización)* | 1.3 | [Leer](clases/06B-inyeccion-sql.md) |
-| 07 | Tecnologías emergentes e inteligencia artificial | 1.4 | *Próximamente* |
+| 07 | Tecnologías emergentes e inteligencia artificial | 1.4 | [Leer](clases/07-tecnologias-emergentes-e-inteligencia-artificial.md) |
 | 08 | Sistemas de autenticación | 2.6 | *Próximamente* |
 | 09 | Criptografía | 2.5 | *Próximamente* |
 | 10 | Protección y detección | 2.2 · 2.3 | *Próximamente* |
@@ -50,6 +50,7 @@ Este repositorio contiene todo el material de estudio de la unidad curricular. E
 | 04 | [Disección de mensajes sospechosos](actividades/04-diseccion-de-phishing.md) | [10 preguntas](autoevaluacion/04-amenazas-malware-ransomware-phishing.md) |
 | 05 | [Tres amenazas, tres defensas](actividades/05-tres-amenazas.md) | [10 preguntas](autoevaluacion/05-amenazas-ingenieria-dos-apt.md) |
 | 06 | [Romperla y arreglarla](actividades/06-romper-y-arreglar.md) | [10 preguntas](autoevaluacion/06-vulnerabilidades-y-superficie-de-ataque.md) |
+| 07 | [IA y seguridad: ¿qué harían ustedes?](actividades/07-ia-y-seguridad.md) · Grupal, 30 min, Google Forms | [10 preguntas](autoevaluacion/07-tecnologias-emergentes-e-inteligencia-artificial.md) |
 
 ---
 

@@ -17,7 +17,11 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 **Agesic** — Agencia de Gobierno Electrónico y Sociedad de la Información y del Conocimiento. Organismo rector de la ciberseguridad en Uruguay; publica el Marco de Ciberseguridad.
 
+**Alucinación (IA generativa)** — Respuesta que presenta información inventada o incorrecta como si fuera cierta. Se verifica con fuentes antes de usarla.
+
 **Amenaza** — Causa potencial de un incidente no deseado. Puede ser deliberada (un atacante), accidental (un error humano) o ambiental (una inundación).
+
+**Aprendizaje automático** — Forma de construir sistemas que aprenden patrones a partir de ejemplos. Es parte del campo de la IA.
 
 **APT** (*Advanced Persistent Threat*) — Amenaza persistente avanzada: atacante con muchos recursos que entra y se queda meses o años sin hacerse notar, con un objetivo concreto (espionaje o sabotaje).
 
@@ -65,6 +69,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 **DDoS** (*Distributed Denial of Service*) — Denegación de servicio distribuida: el mismo ataque desde miles de equipos a la vez, normalmente una botnet.
 
+**Deepfake** — Imagen, video o audio creado o manipulado con IA que puede hacer parecer que una persona dijo o hizo algo que no ocurrió.
+
 **Defensa en profundidad** — Estrategia de superponer varias capas de control, de modo que el fallo de una no comprometa todo el sistema.
 
 **Día cero** (*zero-day*) — Vulnerabilidad que el atacante conoce y el fabricante todavía no: **no existe parche**. Quien defiende tuvo cero días para prepararse.
@@ -99,6 +105,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 ## I
 
+**IA generativa** — Sistemas que generan contenido, como texto, imagen o audio, a partir de lo que reciben.
+
 **IDOR** (*Insecure Direct Object Reference*, referencia insegura a objeto, **CWE-639**) — Falla por la que, cambiando un identificador en la URL (`?id=3`), se accede a datos de otro que no correspondían. Ocurre incluso en aplicaciones con login: el programa verifica que haya sesión pero no que ese usuario pueda ver ese objeto. Se cierra con **control de acceso por objeto**.
 
 **Impacto** — Consecuencia adversa concreta si el incidente ocurre.
@@ -107,7 +115,13 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 **Integridad** — Propiedad que garantiza que la información sea exacta y completa, y que no se modifique sin autorización.
 
+**Inteligencia artificial (IA)** — Campo que reúne sistemas capaces de realizar tareas como reconocer patrones, clasificar información o generar contenido.
+
+**Inyección de instrucciones (prompt injection)** — Intento de hacer que un modelo siga instrucciones que no corresponden, incluidas las que aparecen dentro de un documento o página que consulta.
+
 **Inyección SQL** (**CWE-89**) — Falla por la que un dato del usuario, concatenado al texto de una consulta, termina siendo ejecutado como orden por la base de datos. Permite, por ejemplo, entrar sin contraseña. Se cierra con **consultas parametrizadas**.
+
+**IoT (Internet de las cosas)** — Dispositivos físicos conectados, como cámaras o sensores, que intercambian datos y requieren protección.
 
 ## K
 
@@ -137,6 +151,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 
 **Norma** (o estándar) — Documento obligatorio y medible que baja una política a requisitos concretos. Su verbo característico es «debe».
 
+**Nube** — Servicios de almacenamiento o aplicaciones que se usan a través de servidores de un proveedor. La cuenta y los permisos de acceso también deben protegerse.
+
 **NVD** (*National Vulnerability Database*) — Base pública del NIST donde se consulta cada CVE: descripción, puntaje CVSS, tipo de CWE y versiones afectadas.
 
 ## P
@@ -154,6 +170,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 **Pretexting** — Técnica de ingeniería social: inventar un pretexto creíble para pedir información o un acceso.
 
 **Procedimiento** — Documento que describe paso a paso cómo se ejecuta una tarea. Lo escribe quien opera el sistema.
+
+**Prompt** — Pedido o instrucción que se proporciona a un modelo de IA.
 
 **Puerto** — Número que identifica un canal de comunicación en un equipo conectado a una red. **Cerrado**: no hay nadie del otro lado. **Abierto**: hay un servicio escuchando, es decir, un punto de entrada. Los habituales: `21` FTP, `22` SSH, `23` Telnet, `25` SMTP, `80` HTTP, `443` HTTPS, `3306` MySQL, `3389` RDP.
 
@@ -182,6 +200,8 @@ Términos que se usan a lo largo del curso. Se va ampliando clase a clase.
 **Separación de privilegios** — Principio según el cual una acción crítica debe requerir dos condiciones independientes, no una sola credencial.
 
 **Servicio** — Programa que escucha en un puerto y atiende pedidos de la red (un servidor web, un servidor de base de datos, un servicio de escritorio remoto). Cada servicio expuesto, y sobre todo cada versión desactualizada de un servicio, es superficie de ataque.
+
+**Sesgo (IA)** — Tendencia de un sistema a producir resultados que pueden favorecer o perjudicar injustamente a ciertas personas o grupos.
 
 **Shoulder surfing** — Espiar por encima del hombro una contraseña, un PIN o una pantalla.
 
